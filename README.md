@@ -17,34 +17,16 @@ After cloning or downloading the repository to your local machine:
 
    This command builds the Docker image using the provided Dockerfile in the project directory.
 
-4. Run the Docker container: Execute the following command to run the Docker container:
 
-   ```
-   docker run -p 8000:8000 django-docker-example
-   ```
-
-   This command starts the Docker container and maps port 8000 of the container to port 8000 of the local machine.
-
-5. Access the Django app: Open a web browser and navigate to `http://localhost:8000` to access the Django app running inside the Docker container.
-
-Additionally, in the README file of the repository, you can include the following instructions:
-
-
-
-- Docker Hub image: If you prefer to use the pre-built Docker image from Docker Hub, you can pull it using the following command:
-
-   ```
-   docker pull pedbad/django-docker-example
-   ```
-
-   This command pulls the Docker image for the Django app from the Docker Hub repository.
-
-- Docker Compose: If you want to use Docker Compose for managing the app and the database, a `docker-compose.yml` file is provided in the repository. You can run the app and the database together using the following command:
+4. Docker Compose: If you want to use Docker Compose for managing the app and the database, a `docker-compose.yml` file is provided in the repository. 
+   You can run the app and the database together using the following command:
 
    ```
    docker-compose up
    ```
 
    This command starts the containers defined in the `docker-compose.yml` file.
+
+5. Access the Django app: Open a web browser and navigate to http://localhost:8000 to access the Django app running inside the Docker container.
 
 
