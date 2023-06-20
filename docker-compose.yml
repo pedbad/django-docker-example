@@ -11,6 +11,7 @@ services:
     command: >
       sh -c "python manage.py wait_for_db &&
              python manage.py migrate &&
+             echo \"from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.create_superuser('root', 'admin@example.com', 'root')\" | python manage.py shell &&
              python manage.py runserver 0.0.0.0:8000"
     environment:
       - DB_HOST=db
